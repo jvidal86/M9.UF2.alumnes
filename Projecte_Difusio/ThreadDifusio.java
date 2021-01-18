@@ -1,3 +1,10 @@
+/**
+ * Classe Que executa el Thraeds de la difusió en un block rectangular de la lattice.
+ * Un block es considerat un <b> conjunt adjacent de files de la matriu (lattice)</b>
+ *
+ * @author jordi vidal
+ * @version 0.1
+ */
 public class ThreadDifusio extends Thread {
 
     /**

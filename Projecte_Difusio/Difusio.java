@@ -6,10 +6,15 @@ import java.util.ArrayList;
  *  Dreta: Source (=1)
  *  Esquerra: Sink (=0)
  *  Dalt i Baix: Parets reflectores
+ *
+ * @author jordi vidal
+ * @
+ * @version 0.1
  */
 
 public class Difusio {
-    static double lattice[][];
+    static double lattice[][]; //matriu sencera on es realitzarà la difusió
+
     public static void main(String[] args) {
 
     }
