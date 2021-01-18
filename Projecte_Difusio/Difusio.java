@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 
 public class Difusio {
-    static float lattice[][];
+    static double lattice[][];
     public static void main(String[] args) {
 
     }
