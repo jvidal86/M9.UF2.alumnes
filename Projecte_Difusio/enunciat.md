@@ -9,6 +9,7 @@ Aquestes simulacions en ordenadors poden ser *computacionalment intenses* i acab
 
 
 ![Imatge](https://demonstrations.wolfram.com/ACellularAutomatonBasedHeatEquation/img/popup_3.png)
+
 ### Demostració online
 
 [Wolfram Demonstrations: Heat Equation Cellular Automata](https://demonstrations.wolfram.com/ACellularAutomatonBasedHeatEquation/)
@@ -67,6 +68,27 @@ C(x,y) = 0.25*C(x,y-1) + 0.25*C(x,y+1) + 0.25*C(x-1,y) + 0.25*(x+1,y)
 3.9 .*********^
 ```
 
+# Codeificació en Java
+
+## Semàfors
+
+```java
+synchronized (msg) {
+    if (finished < 2) {
+        finished++;
+        System.out.printf("[%d] gonna wait, finished: %d\n", Thread.currentThread().getId(), finished);
+        try {
+            msg.wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    } else {
+        System.out.printf("[%d] gonna notify\n", Thread.currentThread().getId());
+        finished = 0;
+        msg.notifyAll();
+    }
+}
+```
 
 
 
