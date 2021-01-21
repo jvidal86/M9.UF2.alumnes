@@ -8,7 +8,7 @@ Aquestes simulacions en ordenadors poden ser *computacionalment intenses* i acab
 
 
 
-![Imatge](https://demonstrations.wolfram.com/ACellularAutomatonBasedHeatEquation/img/popup_3.png)
+![Imatge](https://github.com/jvidal86/M9.UF2.alumnes/blob/master/Recursos/difusio_wolfram.png)
 
 ### Demostració online
 
